@@ -1,0 +1,7 @@
+{
+    "name": "bloemendaalconsultancy/nlvalidate",
+    "description": "Dutch local common verification function",
+    "require": {
+        "php": "^7.2"
+    }
+}

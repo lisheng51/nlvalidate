@@ -1,2 +1,1 @@
-# trackrice
-track rice in afrika
+Dutch local common verification function

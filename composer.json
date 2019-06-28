@@ -1,6 +1,24 @@
 {
     "name": "bloemendaalconsultancy/nlvalidate",
+    "type": "library",
     "description": "Dutch local common verification function",
+    "keywords": [
+        "BTW",
+        "onderwijsnummer",
+        "BSN",
+        "fibonacci",
+        "cal_distance",
+        "IBAN"
+    ],
+    "homepage": "https://www.bloemendaalconsultancy.nl/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lisheng Ye",
+            "email": "lisheng51@gmail.com",
+            "homepage": "https://github.com/lisheng51"
+        }
+    ],
     "require": {
         "php": "^7.2",
         "ext-mbstring": "*"

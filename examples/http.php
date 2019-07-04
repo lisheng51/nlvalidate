@@ -6,12 +6,13 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Exception\ClientException;
 
-//var_dump(curl('http://192.168.16.181/logipoort/company/api/Monitor/info_count',['wujie'=>"yue","wujie2"=>"er"]));
+//var_dump(curl('http://192.168.16.181/logipoort/company/api/Monitor/info_count'));
+//exit; 
 
 $apiId = "1";
 $apiKey = "82444824b84c183e9bfabb8daa95bc7d";
 $httpheaders = [
-    "Content-Type" => "application/x-www-form-urlencoded",
+    "Brin" => "ab",
     "apiId" => $apiId,
     "apiKey" => $apiKey
 ];

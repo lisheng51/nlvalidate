@@ -22,7 +22,8 @@
     "require": {
         "php": ">=7.0",
         "ext-mbstring": "*",
-        "phpunit/phpunit": "8.2.3"
+        "phpunit/phpunit": "8.2.3",
+        "guzzlehttp/guzzle": "6.3.3"
     },
     "autoload": {
 

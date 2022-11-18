@@ -13,7 +13,8 @@ namespace BCNL;
  *
  * @author Administrator
  */
-class Calculator {
+class Calculator
+{
 
     /**
      * @assert (0, 0) == 0
@@ -22,8 +23,8 @@ class Calculator {
      * @assert (1, 1) == 2
      * @assert (1, 2) == 4
      */
-    public function add($a, $b) {
+    public function add($a, $b)
+    {
         return $a + $b;
     }
-
 }

@@ -7,7 +7,8 @@ namespace BCNL\extra;
  *
  * @author Administrator
  */
-class KeyGenerator {
+class KeyGenerator
+{
 
     private static $instance;
 
@@ -17,15 +18,16 @@ class KeyGenerator {
      * @static
      * @return	object
      */
-    public static function getInstance() {
+    public static function getInstance()
+    {
         if (!isset(self::$instance)) {
             self::$instance = new self();
         }
         return self::$instance;
     }
 
-    public function __construct() {
-        ;
+    public function __construct()
+    {;
     }
 
     /**
@@ -34,8 +36,8 @@ class KeyGenerator {
      * @param string $license_name
      * @return string
      */
-    public function makeString(): string {
+    public function makeString(): string
+    {
         return "yes";
     }
-
 }

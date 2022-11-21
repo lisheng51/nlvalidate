@@ -27,7 +27,8 @@ class KeyGenerator
     }
 
     public function __construct()
-    {;
+    {
+        
     }
 
     /**

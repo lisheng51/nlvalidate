@@ -1,8 +1,7 @@
 <?php
-
 include '../spl_autoload_register.php';
 
-$obj = new BCNL\extra\KeyGenerator();
+$obj = BCNL\extra\KeyGenerator::getInstance();
 
 $string = $obj->makeString();
 

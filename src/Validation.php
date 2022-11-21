@@ -7,14 +7,16 @@ namespace BCNL;
  *
  * @author Administrator
  */
-class Validation {
+class Validation
+{
 
     /**
      * 
      * @param string $value
      * @return bool
      */
-    public function onderwijsnummer(string $value = ""): bool {
+    public function onderwijsnummer(string $value = ""): bool
+    {
         if (empty($value) === true) {
             return false;
         }
@@ -46,7 +48,8 @@ class Validation {
      * @param string $value
      * @return bool
      */
-    public function bsn(string $value = ""): bool {
+    public function bsn(string $value = ""): bool
+    {
         if (empty($value) === true) {
             return false;
         }
@@ -79,7 +82,8 @@ class Validation {
      * @param string $value
      * @return bool
      */
-    public function btw(string $value = ""): bool {
+    public function btw(string $value = ""): bool
+    {
         if (empty($value) === true) {
             return false;
         }
@@ -92,7 +96,7 @@ class Validation {
         }
 
         $bsn = substr($value, 2, -3);
-        return $this->validateBsn($bsn);
+        return $this->bsn($bsn);
     }
 
     /**
@@ -100,7 +104,8 @@ class Validation {
      * @param string $value
      * @return bool
      */
-    public function iban(string $value = ""): bool {
+    public function iban(string $value = ""): bool
+    {
         if (empty($value) === true) {
             return false;
         }
@@ -119,7 +124,9 @@ class Validation {
 
         $testiban = substr($testiban, 4) . substr($testiban, 0, 4);
         $testiban = str_replace(
-                $iban_replace_chars, $iban_replace_values, $testiban
+            $iban_replace_chars,
+            $iban_replace_values,
+            $testiban
         );
         $head = (int) substr($testiban, 0, 9);
         $tail = substr($testiban, 9);
@@ -130,5 +137,4 @@ class Validation {
         }
         return $mod === 1;
     }
-
 }

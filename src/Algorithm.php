@@ -7,7 +7,8 @@ namespace BCNL;
  *
  * @author Administrator
  */
-class Algorithm {
+class Algorithm
+{
 
     /**
      * 
@@ -17,7 +18,8 @@ class Algorithm {
      * @param float $lon2
      * @return float
      */
-    public function distance(float $lat1 = 0, float $lon1 = 0, float $lat2 = 0, float $lon2 = 0): float {
+    public function distance(float $lat1 = 0, float $lon1 = 0, float $lat2 = 0, float $lon2 = 0): float
+    {
         $the = $lon1 - $lon2;
         $cal_form = sin(deg2rad($lat1)) * sin(deg2rad($lat2)) + cos(deg2rad($lat1)) * cos(deg2rad($lat2)) * cos(deg2rad($the));
         $dist = acos($cal_form);
@@ -30,7 +32,8 @@ class Algorithm {
      * @param int $n
      * @return array
      */
-    public function fibonacci(int $n = 0): array {
+    public function fibonacci(int $n = 0): array
+    {
         $arrResult = [];
         if ($n < 2) {
             $arrResult[] = $n;
@@ -48,5 +51,4 @@ class Algorithm {
 
         return $arrResult;
     }
-
 }
